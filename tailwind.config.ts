@@ -1,18 +1,28 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        gradient: "url('/static/background.png')",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        purple: {
+          951: "rgba(79, 70, 229, 1)",
+        },
+        gray: {
+          950: "hsla(0, 0%, 100%, 0.7);",
+          951: "hsla(0, 0%, 100%, 0.4);",
+          952: "#373b64",
+        },
       },
     },
   },
   plugins: [],
-} satisfies Config;
+};
+export default config;
