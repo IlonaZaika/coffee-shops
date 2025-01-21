@@ -1,11 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
-type CardType = {
-  name: string;
-  imageUrl: string;
-  href: string;
-};
+import { CardType } from "../types";
 
 export default function Card({ name, imageUrl, href }: CardType) {
   return (

@@ -14,6 +14,7 @@ const config: Config = {
       colors: {
         purple: {
           951: "rgba(79, 70, 229, 1)",
+          950: "#f3c57d",
         },
         gray: {
           950: "hsla(0, 0%, 100%, 0.7);",
